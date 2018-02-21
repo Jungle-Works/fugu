@@ -1,0 +1,12 @@
+newrelic_agent.log
+Fugu-Hapi/node_modules/
+*node-modules*
+package-lock.json
+.idea/
+*.md
+csv/
+pdfs/
+uploads/
+docs.html
+.DS_Store
+configuration/production.json
