@@ -1,0 +1,23 @@
+{
+  "PORT" : 3000,
+  "MYSQL" : {
+    "host" : "host",
+    "user" : "root",
+    "password" : "password",
+    "database" : "database"
+  },
+  "newRelicEnabled" : 0,
+  "fuguChatURL" : "https://localhost:3000",
+  "fayeClient" : "https://localhost:3000/faye",
+  "baseUrl" : "https://localhost:3000",
+  "integrationUrl" : "https://localhost:3000",
+  "frontEndUrl":"https://dev-admin.fuguchat.com/",
+  "AUTH": {
+    "url" : "http://url/",
+    "auth_key" : "<auth-key>"
+  },
+  "AMQP" : {
+    "url" : "amqp://localhost?heartbeat=60"
+  },
+  "USERID" : 1
+}
