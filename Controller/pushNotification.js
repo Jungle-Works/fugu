@@ -22,9 +22,10 @@ exports.sendNotification        = sendNotification;
 exports.sendBulkNotification    = sendBulkNotification;
 exports.webNotification         = webNotification;
 
-//let apnsConnection = {};
+
+// let apnsConnection = {};
 function clearAllAPNSConnections() {
-  //apnsConnection = {};
+  // apnsConnection = {};
 }
 
 function sendNotification(logHandler, notificationObject) {

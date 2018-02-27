@@ -225,7 +225,7 @@ function handleChat(userInfo, channelInfo, businessInfo, messageInfo, labelInfo)
         options.message_type           = messageInfo.message_type;
         options.message_id             = messageInfo.message_id;
         options.channel_image          = channelInfo.channel_image || "";
-        options.email                  = userInfo.email || ""
+        options.email                  = userInfo.email || "";
         options.typeList         = [];
         if(!channelInfo.agent_id) {
           options.typeList.push(constants.conversationType.UNASSIGNED);

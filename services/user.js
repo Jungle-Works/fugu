@@ -962,7 +962,6 @@ function resetDeviceToken(logHandler, payload, userInfo) {
 
 function updateFuguUserInfo(logHandler, payload) {
   return new Promise((resolve, reject) => {
-
     let query = ` Update users set ? where business_id = ? and user_unique_key = ? `;
     let updateObj = {};
     (payload.full_name)    ? updateObj.full_name = utils.toTitleCase(payload.full_name) : 0;

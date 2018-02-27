@@ -1079,3 +1079,4 @@ exports.editFuguUserInfo = function (req, res) {
     return UniversalFunc.sendError(error, res);
   });
 };
+

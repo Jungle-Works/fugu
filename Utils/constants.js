@@ -288,11 +288,11 @@ exports.dayInMillisecs = 24 * 60 * 60 * 1000;
 exports.FUGU_COMPONENT_KEY = "fugukey";
 
 exports.keyToComponent = freeze({
-  "fugukey" : "fugu",
-  "integrationkey" : "integration",
-  "outreachkey" : "outreach",
-  "jugnookey" : "jugnoo",
-  "fuguChatKey" : "fuguChat"
+  fugukey        : "fugu",
+  integrationkey : "integration",
+  outreachkey    : "outreach",
+  jugnookey      : "jugnoo",
+  fuguChatKey    : "fuguChat"
 });
 
 exports.API_END_POINT = freeze({

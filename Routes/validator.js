@@ -2163,7 +2163,7 @@ exports.editFuguUserInfo = function (req, res, next) {
     full_name       : Joi.string().optional().default(constants.anonymousUserName),
     phone_number    : Joi.string().optional().default(" "),
     user_image_url  : Joi.string().optional(),
-    status          : Joi.number().optional().valid("1","0")
+    status          : Joi.number().optional().valid("1", "0")
   });
 
   let validFields = validateFields(req.body, res, schema);
