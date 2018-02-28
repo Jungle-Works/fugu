@@ -1,0 +1,47 @@
+<html>
+  <body>
+    <head>
+      <script src=' https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+      <style>
+        #messages { height: 300px; width: 300px; overflow: hidden; border: #ccc solid 1px;}
+        section { margin-left: 20px; }
+      </style>
+    </head>
+    <section>
+    <h1>Chat Client</h1>
+    <div id="messages"></div>
+    <textarea rows="2" cols="35" id="chat"></textarea>
+    <input type='button' value='Chat' id='fire' />
+
+    <script src='https://localhost:3000/faye/client.js'></script>
+    <script>
+      var $chat = $('#chat');
+      var user = prompt("Please enter your name:", "");
+      var channel = prompt("Please enter channel name:", "");
+      var client_id, user_id;
+      $('#fire').on('click',null, function() {
+        client.publish("/"+channel+"", {
+                      message: $chat.val(),
+                      is_typing: 0,
+                      full_name: user,
+                      user_id: 200,
+                      date_time: '2017-06-06T12:02:56Z',
+                      message_type: 3
+                  });
+        $chat.val('');
+        console.log("These are the data",$chat.val(),user_id,user,client_id);
+      });
+
+        var client = new Faye.Client('https://localhost:3000/faye/',{
+          timeout: 20
+        });
+
+        client.subscribe("/"+channel+"", function(message) {
+          $('#messages').append('<p>' +message.full_name+":"+ message.message + '</p>');
+          console.log("These are the data",message.full_name,message.message,message.user_id,message.client_id);
+        });
+
+    </script>
+    </section>
+  </body>
+</html>
