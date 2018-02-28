@@ -32,18 +32,13 @@ Follow the instructions below to get start your own fugu on your local machine.
 
 - Direct Messaging
 - Multiple Chat Rooms
-- Private Groups
-- Public Groups
-- Mobile Notifications
-- Desktop Notifications
-- Tagging
-- User profile
-- Markdown
-- Emojis
-- Gifs
-- File sharing - S3 uploads
-- Group Search
-- User Search
+- Groups : Private Groups, Public Groups, General Groups
+- Notification : Mobile Notifications, Desktop Notifications
+- Profiling : User profile, company profile
+- Highlighting : Markdown, Tagging
+- Fun : Emojis, Gifs
+- File sharing - images, mp3 files, pdf, excel and much more (S3 uploads)
+- Search : Group Search, User Search
 
 
 ## Built With
