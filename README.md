@@ -20,9 +20,9 @@ Follow the instructions below to get start your own fugu on your local machine.
 
 2. Start local server on 3000 port(default) with  dev environment configuration using command below.
 
-   ```
-NODE_ENV=dev node server.js
-```
+  ```
+  NODE_ENV=dev node server.js
+  ```
 
  To run a custom  environment, create a new file production.json in configuration folder and run using  ```NODE_ENV=production node server.js``` command.
 
